@@ -1,6 +1,6 @@
 .main-a{
     height: 300vh;
-    width: 100%;
+    width: auto;
     background-image: linear-gradient(
         0deg,
         rgba(0,0,0,0.5),
@@ -69,6 +69,50 @@
             background-image: url(./img/river\ 2.jpg);
             background-size: cover;
             background-position: top;
+        }
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 520px){
+    .main-a{
+        height: auto;
+        .biografia{
+            flex-direction: column;
+            height: 1000px;
+            padding: 5% 0%;
+            .bleft{
+                width: 100%;
+                height: 400px;
+            }
+            .bright{
+                width: 100%;
+                height: 600px;
+                h3{
+                    padding: 15px 0px;
+                    font-size: 40px;
+                }
+                p{
+                    padding: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 520px) and (max-width: 1080px){
+    .main-a{
+        height: auto;
+        .biografia{
+            height: 720px;
+            .bright{
+                h3{
+                    padding: 15px 0px;
+                    font-size: 40px;
+                }
+                p{
+                    padding: 20px;
+                }
+            }
         }
     }
 }

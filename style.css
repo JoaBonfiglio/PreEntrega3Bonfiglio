@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Pirata+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Petit+Formal+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -106,7 +107,7 @@ footer i:hover {
 }
 .main-a {
   height: 300vh;
-  width: 100%;
+  width: auto;
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/roca.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -174,6 +175,46 @@ footer i:hover {
   background-position: top;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 520px) {
+  .main-a {
+    height: auto;
+  }
+  .main-a .biografia {
+    flex-direction: column;
+    height: 1000px;
+    padding: 5% 0%;
+  }
+  .main-a .biografia .bleft {
+    width: 100%;
+    height: 400px;
+  }
+  .main-a .biografia .bright {
+    width: 100%;
+    height: 600px;
+  }
+  .main-a .biografia .bright h3 {
+    padding: 15px 0px;
+    font-size: 40px;
+  }
+  .main-a .biografia .bright p {
+    padding: 20px;
+  }
+}
+@media only screen and (min-width: 520px) and (max-width: 1080px) {
+  .main-a {
+    height: auto;
+  }
+  .main-a .biografia {
+    height: 720px;
+  }
+  .main-a .biografia .bright h3 {
+    padding: 15px 0px;
+    font-size: 40px;
+  }
+  .main-a .biografia .bright p {
+    padding: 20px;
+  }
+}
 .main-g {
   height: auto;
 }
@@ -358,4 +399,15 @@ footer i:hover {
     margin: 0;
     padding-top: 0%;
   }
+}
+.main-e {
+  height: 650vh;
+}
+.main-e h2 {
+  float: right;
+  font-size: 50px;
+  font-family: "Cabin Sketch";
+  color: #fff;
+  padding: 30px 30px 10px 10px;
+  background-color: rgba(0, 0, 0, 0.685);
 }/*# sourceMappingURL=style.css.map */
