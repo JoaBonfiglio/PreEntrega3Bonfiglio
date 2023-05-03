@@ -1,0 +1,71 @@
+.main-c{
+    height: auto;
+}
+.contactanos{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    .contacto1{
+        height: 600px;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.685);
+        text-align: center;
+        width: 100%;
+        h2{
+            font-size: 45px;
+            font-family: $font4;
+            text-shadow: 0 0 2px;
+            color: $color6;
+            padding: 20px;
+        }
+        h3{
+            font-size: 20px;
+            text-shadow: 0 0 2px;
+            color: $color6;
+            font-family: Helvetica, sans-serif;
+            i{
+                color: $color4;
+            }
+            i:hover{
+                transform: scale(1.2);
+            }
+        }
+        h3:hover{
+            color: $color4;
+        }
+    }
+
+    .contacto2{
+        display: flex;
+        justify-content: center;
+        padding-top: 50px;
+        width: 100%;
+        .panel-title{
+            color: $color6;
+            padding-top: 70px;
+            font-size: 45px;
+            font-family: $font4;
+        }
+        height: 600px;
+        margin-top: 30px;
+        background-color: rgba(0, 0, 0, 0.685);
+        .table{
+            color: $color6;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .contactanos{
+        flex-direction: row;
+        .contacto1{
+            width: 50%;
+            padding-top: 50px;
+        }
+        .contacto2{
+            width: 50%;
+            margin: 0;
+            padding-top: 0%;
+        }
+    }
+}

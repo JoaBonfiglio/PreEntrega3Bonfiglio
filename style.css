@@ -1,0 +1,361 @@
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pirata+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Petit+Formal+Script&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.logo {
+  font-size: 50px;
+  font-family: "Pirata One";
+  color: #000821;
+}
+
+.inicio {
+  height: auto;
+  width: 100%;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/roca.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top;
+}
+.inicio .bloque1 {
+  height: 140vh;
+  width: auto;
+}
+.inicio .bloque1 h1 {
+  text-align: center;
+  font-family: "Arvo", serif;
+  color: #fff;
+  font-size: 35px;
+  text-shadow: 0 0 2px;
+  padding-top: 80px;
+}
+.inicio .bloque2 {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.685);
+}
+.inicio .bloque2 .imagen {
+  height: 500px;
+  width: 100%;
+  background-image: url(./img/programacion.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.inicio .bloque2 .info {
+  height: auto;
+  width: 100%;
+  text-shadow: 0 0 3px;
+}
+.inicio .bloque2 .info h2 {
+  padding: 30px 0px;
+  text-align: center;
+  color: #fff;
+  font-family: "Bruno Ace SC";
+  font-size: 30px;
+}
+.inicio .bloque2 .info p {
+  padding: 20px;
+  color: #fff;
+  font-family: "Bruno Ace SC";
+}
+.inicio .bloque2 .info p:hover {
+  color: #006B7C;
+}
+
+footer span {
+  font-size: 20px;
+}
+footer i {
+  font-size: 35px;
+  color: #000821;
+  letter-spacing: 20px;
+}
+footer i:hover {
+  transform: scale(1.5);
+}
+
+@media only screen and (min-width: 768px) {
+  .inicio .bloque1 h1 {
+    font-size: 50px;
+  }
+  .inicio .bloque2 {
+    flex-direction: row;
+    padding-bottom: 50px;
+    height: 700px;
+  }
+  .inicio .bloque2 .imagen {
+    width: 50%;
+    height: auto;
+  }
+  .inicio .bloque2 .info {
+    width: 50%;
+  }
+  .inicio .bloque2 .info h2 {
+    font-size: 40px;
+  }
+  .inicio .bloque2 .info p {
+    font-size: 20px;
+  }
+}
+.main-a {
+  height: 300vh;
+  width: 100%;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/roca.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top;
+}
+.main-a .biografia {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding-top: 90px;
+}
+.main-a .biografia .bleft {
+  height: auto;
+  width: 50%;
+  background-image: url(./img/potenza.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.main-a .biografia .bright {
+  height: auto;
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.685);
+}
+.main-a .biografia .bright h3 {
+  padding: 30px 0px;
+  text-align: center;
+  color: #fff;
+  font-family: "Petit Formal Script";
+  font-size: 45px;
+}
+.main-a .biografia .bright p {
+  padding: 35px;
+  font-size: 20px;
+  text-shadow: 0 0 2px;
+  color: #fff;
+  font-family: Helvetica, sans-serif;
+}
+.main-a .biografia .bright p:hover {
+  color: #006B7C;
+}
+.main-a .biografia .bright a {
+  background-color: #000;
+  padding: 10px 20px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-transform: capitalize;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+.main-a .biografia .bright a:hover {
+  background-color: #333;
+  border: 2px solid white;
+}
+.main-a .biografia .dleft {
+  background-image: url(./img/roca\ 2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.main-a .biografia .rleft {
+  background-image: url(./img/river\ 2.jpg);
+  background-size: cover;
+  background-position: top;
+}
+
+.main-g {
+  height: auto;
+}
+.main-g .mgalery {
+  background-color: rgba(0, 0, 0, 0.685);
+  height: auto;
+}
+.main-g .mgalery .title-galery {
+  padding: 30px 0px;
+  text-align: center;
+  color: #fff;
+  font-family: "Petit Formal Script";
+  font-size: 45px;
+  text-shadow: 0 0 1px;
+}
+.main-g .mgalery .galeria {
+  height: auto;
+  width: 100%;
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(8, 300px);
+  grid-gap: 20px;
+}
+.main-g .mgalery .galeria .item {
+  height: auto;
+  width: 100%;
+  border: 3px solid #fff;
+  background-size: cover;
+  background-position: center;
+}
+.main-g .mgalery .galeria .item:hover {
+  transform: scale(1.05);
+}
+.main-g .mgalery .galeria .item1 {
+  background-image: url(./img/potenza.jpg);
+}
+.main-g .mgalery .galeria .item2 {
+  background-image: url(./img/entrenamiento.jpg);
+}
+.main-g .mgalery .galeria .item3 {
+  background-image: url(./img/rio\ negro.jpg);
+}
+.main-g .mgalery .galeria .item4 {
+  background-image: url(./img/river.PNG);
+  background-position: center;
+}
+.main-g .mgalery .galeria .item5 {
+  background-image: url(./img/river\ 2.jpg);
+  background-position: top;
+}
+.main-g .mgalery .galeria .item6 {
+  background-image: url(./img/roca\ 14.jpg);
+}
+.main-g .mgalery .galeria .item7 {
+  background-image: url(./img/roca\ 2.jpg);
+}
+.main-g .mgalery .galeria .item8 {
+  background-image: url(./img/trofeo.jpg);
+}
+
+@media only screen and (min-width: 425px) and (max-width: 768px) {
+  .main-g .mgalery {
+    padding-bottom: 40px;
+  }
+  .main-g .mgalery .galeria {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 350px);
+    grid-gap: 20px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .main-g .mgalery {
+    padding-bottom: 40px;
+  }
+  .main-g .mgalery .galeria {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 300px);
+    grid-gap: 20px;
+  }
+  .main-g .mgalery .galeria .item1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .main-g .mgalery .galeria .item2 {
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
+  .main-g .mgalery .galeria .item3 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+  .main-g .mgalery .galeria .item4 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-position: 18%;
+  }
+  .main-g .mgalery .galeria .item5 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+  .main-g .mgalery .galeria .item6 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .main-g .mgalery .galeria .item7 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  .main-g .mgalery .galeria .item8 {
+    grid-column: 3/4;
+    grid-row: 3/4;
+  }
+}
+.main-c {
+  height: auto;
+}
+
+.contactanos {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.contactanos .contacto1 {
+  height: 600px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.685);
+  text-align: center;
+  width: 100%;
+}
+.contactanos .contacto1 h2 {
+  font-size: 45px;
+  font-family: "Petit Formal Script";
+  text-shadow: 0 0 2px;
+  color: #fff;
+  padding: 20px;
+}
+.contactanos .contacto1 h3 {
+  font-size: 20px;
+  text-shadow: 0 0 2px;
+  color: #fff;
+  font-family: Helvetica, sans-serif;
+}
+.contactanos .contacto1 h3 i {
+  color: #006B7C;
+}
+.contactanos .contacto1 h3 i:hover {
+  transform: scale(1.2);
+}
+.contactanos .contacto1 h3:hover {
+  color: #006B7C;
+}
+.contactanos .contacto2 {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  width: 100%;
+  height: 600px;
+  margin-top: 30px;
+  background-color: rgba(0, 0, 0, 0.685);
+}
+.contactanos .contacto2 .panel-title {
+  color: #fff;
+  padding-top: 70px;
+  font-size: 45px;
+  font-family: "Petit Formal Script";
+}
+.contactanos .contacto2 .table {
+  color: #fff;
+}
+
+@media only screen and (min-width: 768px) {
+  .contactanos {
+    flex-direction: row;
+  }
+  .contactanos .contacto1 {
+    width: 50%;
+    padding-top: 50px;
+  }
+  .contactanos .contacto2 {
+    width: 50%;
+    margin: 0;
+    padding-top: 0%;
+  }
+}/*# sourceMappingURL=style.css.map */

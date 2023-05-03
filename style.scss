@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Petit+Formal+Script&display=swap');
+
+$font1: 'Arvo', serif;
+$font2: 'Bruno Ace SC';
+$font3: 'Pirata One';
+$font4: 'Petit Formal Script';
+
+//paleta de colores
+$color1: #000821;
+$color2:rgb(0, 0, 0);
+$color3: #003956;
+$color4: #006B7C;
+$color5:#00A085;
+$color6: #fff;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+//header
+.logo{
+    font-size: 50px;
+    font-family: $font3;
+    color: $color1;
+}
+
+//main
+.inicio{
+    height: auto;
+    width: 100%;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(./img/roca.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+    .bloque1{
+        height: 140vh;
+        width: auto;
+        h1{
+            text-align: center;
+            font-family: $font1;
+            color: $color6;
+            font-size: 35px;
+            text-shadow: 0 0 2px;
+            padding-top: 80px;
+        }
+    }
+    .bloque2{
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.685);
+        .imagen{
+            height: 500px;
+            width: 100%;
+            background-image: url(./img/programacion.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        .info{
+            height: auto;
+            width: 100%;
+            text-shadow: 0 0 3px;
+            h2{
+                padding: 30px 0px;
+                text-align: center;
+                color: $color6;
+                font-family: $font2;
+                font-size: 30px;
+            }
+            p{
+                padding: 20px;
+                color: $color6;
+                font-family: $font2;
+            }
+            p:hover{
+                color: $color4;
+            }
+        }
+    }
+}
+
+
+//footer
+footer{
+    span{
+        font-size: 20px;
+
+    }
+    i{
+        font-size: 35px;
+        color: $color1;
+        letter-spacing: 20px;
+    }
+    i:hover{
+        transform: scale(1.5);
+    }
+}
+
+
+//media queries
+@media only screen and (min-width: 768px){
+    .inicio{
+        .bloque1{
+            h1{
+                font-size: 50px;
+            }
+        }
+        .bloque2{
+            flex-direction: row;
+            padding-bottom: 50px;
+            height: 700px;
+            .imagen{
+            width: 50%;
+            height: auto;
+            }
+            .info{
+            width: 50%;
+            h2{
+                font-size: 40px;
+            }
+            p{
+                font-size: 20px
+            }
+            }
+        }
+    }
+}
+
+//import
+@import "_biografia";
+@import "_multimedia";
+@import "_contacto";
