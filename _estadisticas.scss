@@ -62,18 +62,15 @@
                     animation: move 6s ease-out infinite;
                     }
                     button{
-                    border: 2px solid white;
+                    border: 2px dashed white;
                     background-color: rgba(0, 0, 0, 0);
                     color: white;                
                     font-size: 25px;
                     border-radius: 50%;
                     padding: 15px;
                     margin-left: 60px;
-                    }
-                    button:hover{
-                        color: $color4;
-                        border: 4px $color4;
-                        background-color: $color2;
+                    transform: translateX(0px);
+                    animation: move 6s ease-out infinite;
                     }
                 }
             }

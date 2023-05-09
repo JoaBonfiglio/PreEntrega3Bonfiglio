@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Pirata+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Petit+Formal+Script&display=swap");
@@ -252,7 +253,7 @@ footer i:hover {
   padding-top: 20px;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(8, 300px);
+  grid-template-rows: repeat(12, 300px);
   grid-gap: 20px;
 }
 .main-g .mgalery .galeria .item {
@@ -291,6 +292,18 @@ footer i:hover {
 .main-g .mgalery .galeria .item8 {
   background-image: url(./img/trofeo.jpg);
 }
+.main-g .mgalery .galeria .item9 {
+  background-image: url(./img/7.jpg);
+}
+.main-g .mgalery .galeria .item10 {
+  background-image: url(./img/d3epo.jpeg);
+}
+.main-g .mgalery .galeria .item11 {
+  background-image: url(./img/festejo.jpeg);
+}
+.main-g .mgalery .galeria .item12 {
+  background-image: url(./img/niño.jpeg);
+}
 
 @media only screen and (min-width: 425px) and (max-width: 768px) {
   .main-g .mgalery {
@@ -298,7 +311,7 @@ footer i:hover {
   }
   .main-g .mgalery .galeria {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(4, 350px);
+    grid-template-rows: repeat(6, 350px);
     grid-gap: 20px;
   }
 }
@@ -308,7 +321,7 @@ footer i:hover {
   }
   .main-g .mgalery .galeria {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(3, 300px);
+    grid-template-rows: repeat(4, 300px);
     grid-gap: 20px;
   }
   .main-g .mgalery .galeria .item1 {
@@ -342,7 +355,20 @@ footer i:hover {
   }
   .main-g .mgalery .galeria .item8 {
     grid-column: 3/4;
+    grid-row: 3/5;
+  }
+  .main-g .mgalery .galeria .item9 {
+    grid-column: 1/2;
     grid-row: 3/4;
+  }
+  .main-g .mgalery .galeria .item10 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  .main-g .mgalery .galeria .item11 {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    background-position: top;
   }
 }
 .main-c {
@@ -485,18 +511,15 @@ footer i:hover {
   animation: move 6s ease-out infinite;
 }
 .main-e .stats .caja1 .total button {
-  border: 2px solid white;
+  border: 2px dashed white;
   background-color: rgba(0, 0, 0, 0);
   color: white;
   font-size: 25px;
   border-radius: 50%;
   padding: 15px;
   margin-left: 60px;
-}
-.main-e .stats .caja1 .total button:hover {
-  color: #006B7C;
-  border: 4px #006B7C;
-  background-color: rgb(0, 0, 0);
+  transform: translateX(0px);
+  animation: move 6s ease-out infinite;
 }
 
 @keyframes move {
