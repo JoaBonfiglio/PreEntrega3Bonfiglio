@@ -122,6 +122,18 @@ footer{
 }
 
 
+@media only screen and (max-width: 520px){
+    footer{
+        span{
+            padding-left: 25px;
+        }
+        i{
+            padding-left: 20px;
+            letter-spacing: 5px;
+        }
+    }
+}
+
 //media queries
 @media only screen and (min-width: 768px){
     .inicio{
